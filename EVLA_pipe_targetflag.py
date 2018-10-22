@@ -41,6 +41,7 @@ logprint ("Checking RFI flagging of all targets", logfileout='logs/targetflag.lo
 default('flagdata')
 vis=ms_active
 mode='rflag'
+spw='7~38'
 field=''
 correlation='ABS_'+corrstring
 scan=''
@@ -65,6 +66,7 @@ flagdata()
 default('flagdata')
 vis=ms_active
 mode='rflag'
+spw='7~38'
 field=''
 correlation='ABS_'+corrstring
 scan=''
