@@ -46,7 +46,7 @@ fitcorr=''
 combine=''
 minsamp=2
 field=''
-spw=''
+spw='7~38'
 intent='*CALIBRATE*'
 datacolumn='corrected'
 statwt()
@@ -62,7 +62,7 @@ fitcorr=''
 combine=''
 minsamp=2
 field=''
-spw=''
+spw='7~38'
 intent='*TARGET*'
 datacolumn='corrected'
 statwt()
