@@ -1,0 +1,42 @@
+EVLA_pipeline.py
+-updated casa version number, pipeline version number, revision date
+-In the past the internal CASA version (through the command casadef.casa_version) was e.g. '4.6.0',
+now it is '4.7.0-REL (r38335)'. Formatted the CASA version check syntax to accommodate this change.
+
+
+EVLA_pipe_fluxboot.py
+EVLA_pipe_plotsummary.py
+EVLA_pipe_semiFinalBPdcals1.py
+EVLA_pipe_semiFinalBPdcals2.py
+EVLA_pipe_testBPdcals.py
+The above noted scripts use plotms with time averaging. In the past the unit 's' was included in the
+syntax of the parameter avgtime, e.g., avgtime='1e8s'. In CASA 4.7.0 the unit should be removed, i.e.,
+avgtime='1e8'. Changes have been made to reflect this.
+
+
+EVLA_pipe_msinfo.py
+Added several more baselines in the plotms call to plot elevation vs. time in case the two that were
+being used had issues.
+
+
+EVLA_pipe_calprep.py
+EVLA_pipe_fluxgains.py
+EVLA_pipe_finalcals.py
+In these scripts in the setjy execution on the FDSC and while looping on the spw's, if a given spw is
+flagged the script is quitting in CASA 4.7.0. Added try/except statements so that the pipeline
+execution continues.
+
+
+EVLA_pipe_plotsummary.py
+Added amplitude vs. frequency plots per field per baseband +  phase vs. frequency plots per field per
+baseband. Set it up so that for new data it should plot per field and per band and per baseband and will
+exclude the ref pointing setups. For old data it should plot all the spw's per field.
+
+
+EVLA_pipe_weblog.py
+-Because of the change in the internal definition of casadef.casa_version, updated this script so that
+the weblog does not show redundant revision information.
+-Added the lines to include the Amp & Phase vs. Freq plots in the weblog.
+
+
+
