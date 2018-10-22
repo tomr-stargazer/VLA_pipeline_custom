@@ -150,7 +150,8 @@ try:
 
 # HANNING SMOOTH (OPTIONAL, MAY BE IMPORTANT IF THERE IS NARROWBAND RFI)
 
-    execfile(pipepath+'EVLA_pipe_hanning.py')
+    # Commented out by T. Rice, following J. Salcido's advice
+    # execfile(pipepath+'EVLA_pipe_hanning.py')
 
 ######################################################################
 
@@ -202,7 +203,8 @@ try:
 # IDENTIFY AND FLAG BASEBANDS WITH BAD DEFORMATTERS OR RFI BASED ON
 # BP TABLE PHASES
 
-    execfile(pipepath+'EVLA_pipe_flag_baddeformattersphase.py')
+    # Commented out by T. Rice, following J. Salcido's advice
+    # execfile(pipepath+'EVLA_pipe_flag_baddeformattersphase.py')
 
 #*********************************************************************
 
