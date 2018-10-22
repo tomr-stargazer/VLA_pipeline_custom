@@ -79,7 +79,7 @@ if casa_version > 472:
     sys.exit("Your CASA version is "+casadef.casa_version+", please re-start using CASA 4.7.2")
 
 # Define location of pipeline
-pipepath='/path/to/your/installation/pipeline4.7.2/'
+pipepath='/Users/tsrice/Documents/Academia/Analysis/VLA/pipeline4.7.2'
 
 #This is the default time-stamped casa log file, in case we
 #    need to return to it at any point in the script
